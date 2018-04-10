@@ -1,0 +1,46 @@
+[
+  [
+    {"answer":"Без корабля","number":"64"},{"answer":"Без попугая","number":"56"},{"answer":"Без повязки на глаз","number":"40"},
+    {"answer":"Без рома","number":"24"},{"answer":"Без треуголки","number":"10"},{"answer":"Без оружия","number":"6"}
+  ],
+  [
+    {"answer":"Сосед","number":"57"},{"answer":"Супруг","number":"48"},{"answer":"Жена","number":"47"},
+    {"answer":"Начальник","number":"20"},{"answer":"Коллега","number":"12"},{"answer":"Родители","number":"2"}
+  ],
+  [
+    {"answer":"В суде","number":"77"},{"answer":"Нигде","number":"67"},{"answer":"Исповедь","number":"27"},
+    {"answer":"Школа","number":"12"},{"answer":"Кухня","number":"10"},{"answer":"ЗАГС","number":"9"}
+  ],
+  [
+    {"answer":"Навигатор","number":"52"},{"answer":"Интернет","number":"47"},{"answer":"Карта","number":"37"},
+    {"answer":"Телефон","number":"25"},{"answer":"Справочник","number":"10"},{"answer":"Спросить у людей","number":"1"}
+  ],
+  [
+    {"answer":"Красилась","number":"80"},{"answer":"Проспала","number":"74"},{"answer":"Долго собиралась","number":"72"},
+    {"answer":"Попала в пробку","number":"21"},{"answer":"Забыла","number":"17"},{"answer":"Сломала каблук","number":"10"}
+  ],
+  [
+    {"answer":"Досыпает","number":"32"},{"answer":"Утреннюю гимнастику","number":"24"},{"answer":"Идет в туалет","number":"20"},
+    {"answer":"Лежит","number":"14"},{"answer":"Завтракает","number":"11"},{"answer":"Матерится","number":"1"}
+  ],
+  [
+    {"answer":"Титаник","number":"73"},{"answer":"Пляж","number":"48"},{"answer":"Начало","number":"45"},
+    {"answer":"Авиатор","number":"35"},{"answer":"Ромео и Джульетта","number":"12"},{"answer":"Остров проклятых","number":"11"}
+  ],
+  [
+    {"answer":"Время","number":"64"},{"answer":"Земля","number":"57"},{"answer":"Человек","number":"45"},
+    {"answer":"Маятник","number":"32"},{"answer":"Машина","number":"24"},{"answer":"Вечный двигатель","number":"8"}
+  ],
+  [
+    {"answer":"Мясо","number":"48"},{"answer":"Яйцо","number":"37"},{"answer":"Молоко","number":"35"},
+    {"answer":"Творог","number":"32"},{"answer":"Рыба","number":"12"},{"answer":"фасоль","number":"10"}
+  ]
+,
+  [
+    {"answer":"Часовщик","number":"35"},{"answer":"Учитель","number":"22"},{"answer":"Врач","number":"19"},
+    {"answer":"Тренер","number":"15"},{"answer":"Судья","number":"10"},{"answer":"Охранник","number":"8"}
+  ]
+
+
+]
+
