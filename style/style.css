@@ -1,0 +1,700 @@
+body {
+    background: url("../images/wallpaper.png") repeat;
+}
+* {
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-menu {
+  text-align: center;
+}
+#main-menu ul li {
+    margin-top: 50px;
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+    height: 60px;
+    border: 1px solid #bbb;
+    background-image: linear-gradient(#fff,#999);
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+    vertical-align: middle;
+    line-height: 55px;
+    border-radius: 10px;
+}
+#main-menu ul li:hover{
+    color: #000;
+    text-decoration: none;
+    background-color: #999;
+    background-position: 0 -3px;
+    transition: background-position .1s linear;
+}
+#main-menu ul {
+   list-style: none;
+}
+#Main{
+
+}
+#content{
+    margin: 50px 100px 0 100px;
+font-size: 18px;
+}
+#content p {
+    text-indent: 1.5em;
+}
+#content ul {
+list-style-type: none;
+}
+#content h2{
+    margin: 100px 0 50px 0;
+}
+#content h3{
+text-align: center
+}
+.active {
+    background-image: linear-gradient(#fff,#000) !important;
+    color:white;
+}
+#modalFormAsk{
+    width: 600px;
+    height: auto;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    z-index: 3;
+    margin-left: -300px;
+    margin-top: -100px;
+display: none;
+}
+#modalFormMode{
+    width: 600px;
+    height: auto;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    z-index: 3;
+    margin-left: -300px;
+    margin-top: -100px;
+    display: none;
+}
+
+#modalClose{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    display: block;
+}
+.open{
+    display: block !important;
+
+}
+.hide{
+    display: none !important;
+}
+
+.form_horizontal_modal{
+    padding: 15px;
+    background: rgba(0,0,0,0.7);    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+}
+.form_group {
+    width: 100%;
+    margin: 10px 0 10px -5px;
+
+}
+.form_group p {
+    text-align: center;
+    margin: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+#textinput{
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.ok{
+    margin: 30px 0 0 210px !important;
+}
+.button{
+    width: 150px;
+    text-align:center;
+    display: inline-block;
+    margin-left: 90px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s linear;
+    background-image: linear-gradient(#fff,#999);
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+    border: 1px solid black;
+}
+.button:hover{
+    box-shadow: 200px 0 0 0 rgba(0,0,0,.2) inset;
+}
+.button:active {
+    box-shadow: 200px 0 0 0 rgba(0,0,0,.4) inset;
+    transform: rotate(-3deg);}
+
+#icon {
+    min-width: 100px;
+    width: 120px;
+    height: 60px;
+    border: black 1px solid;
+   position: absolute;
+    left: 15px;
+    top: 50px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.7);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+}
+
+ #icon p {
+     text-align: center;
+     line-height: 50px;
+     font-size: 20px;
+     color: white;
+ }
+ #iconClick{
+     position: absolute;
+     top: 110px;
+     left: 15px;
+     width: 120px;
+     height: 40px;
+     border: black 1px solid;
+     display: none;
+     background: rgba(0,0,0,0.7);
+     box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+     border-radius: 10px;
+     color: white;
+     transition:display, 0.9s, ease-in; }
+ #iconClick p {
+     cursor: pointer;
+     text-align: center;
+     line-height: 35px;
+ }
+.smooth{
+margin-left: calc(50% - 195px)
+}
+#gameBorder {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    margin: auto auto 20px;
+   background: url("../images/bg.jpg") repeat;
+    box-shadow: 0 0 20px #444;
+    cursor: default;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#currentPoint{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+#currentPoint span{
+    width: 138px;
+    height: 25px;
+}
+#points{
+    margin: auto;
+    width: 113px;
+    height: 100%;
+    text-shadow: 0 0 10px #FFE88C;    background: rgba(0,0,0,.1);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.spr {
+    background: url("../images/gameTypes.png") no-repeat;
+display: inline-block;
+
+}
+.onePlay{
+    background-position: 0 -30px;
+    width: 138px;
+    height: 25px;
+}
+.twoPlay {
+    background-position: 0 -60px;
+    width: 138px;
+    height: 25px;
+}
+.threePlay  {
+    background-position: 0 -3px;
+    width: 138px;
+    height: 25px;
+}
+#points span {
+    height: 40px;
+    font-size: 29px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: #bebebe;
+}
+
+#divAsk{
+    height: 80px;
+}
+#divAsk span {
+    display: block;
+    padding: 0 10px 0 10px;
+    margin: auto;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    -1px -1px 0 black;
+    color: white;
+    transition: all 1s;
+}
+
+
+
+#leftUser{
+    height: 360px;
+    width: 225px;
+    float: left;
+}
+#rightUser{
+    height: 360px;
+    width: 225px;
+    float: right;
+}
+#answerBoard{
+    height: 360px;
+    width: 450px;
+    position: absolute;
+    left: 225px;
+}
+.wraperAnswer{
+    margin: 10px 20px 10px 20px;
+    height: 300px;
+}
+.openAnswer{
+    background-color: rgba(0,0,0,.6) !important;
+    color: #ffffff;
+
+}
+.wraperAnswer div {
+    margin-bottom: 5px;
+    height: 45px;
+    border-radius: 10px ;
+}
+.close {
+background-color: #EFEFEF;
+    transition: .3s linear;
+
+}
+.d1{
+    font-size: 12px
+}
+.d2{
+    font-size: 24px
+}
+.d3{
+    font-size: 48px
+}
+.number{
+    text-align: center;
+    padding: 6px 0 0;
+    font-weight: 700;
+    color: #969696;
+    height: 42px;
+    margin-left: calc(50% - 75px);
+    transition: opacity .3s, max-height .3s;
+
+}
+
+.number span {
+     line-height: 12px;
+     margin-left: 10px;
+ }
+.answerStyle{
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.scoreStyle{
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#wraperFormAnswer{
+    height: 50px;
+    position: relative;
+}
+#wraperFormAnswerGoGo{
+    height: 50px;
+    position: relative;
+}
+
+#goGo{
+    position: absolute;
+    top: 0px;
+}
+#wraperForm{
+    height: 50px;
+}
+#wraperFormGoGo{
+    height: 50px;
+    display: none;
+}
+#textAnswer{
+    margin: 0 0 0 20px;
+    height: 100%;
+    width: 350px;
+    padding: 0 0 0 10px;
+
+}
+#textAnswerGoGo{
+    margin: 0 0 0 20px;
+    height: 100%;
+    width: 350px;
+    padding: 0 0 0 10px;
+
+}
+
+#time{
+    width: 70px;
+    height: 50px;
+
+}
+#timeGoGo{
+    width: 70px;
+    height: 50px;
+
+}
+.wraperPlr{
+    width: 113px;
+margin: 10px auto 0 auto;
+}
+.pointsLeft{
+    margin: auto;
+    width: 113px;
+    height: 100%;
+    text-align: center;
+
+}
+.pointsLeft span {
+    height: 40px;
+    font-size: 29px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: #bebebe;
+}
+.spr2{
+    width: 93px;
+    height: 93px;
+    border: solid 1px #6a2b12;
+    margin: 20px auto 0 auto;
+    background: url("../images/sprites.png") no-repeat;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+}
+.iconcPlrLeft{
+    width: 100px; height: 100px;
+    background-position: -10px -10px;
+}
+.iconcPlrRight{
+    width: 100px; height: 100px;
+    background-position: -10px -130px;
+
+}
+.namePlr{
+    width: 100%;
+    height: 20px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+
+}
+.currentScoreLeft{
+    width: 113px;
+    height: 40px;
+    margin: 40px auto 0 auto;
+    background: rgba(0,0,0,.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+}
+.circle{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 15px;
+    background: rgba(205,79,27,.3);
+    border: 1px solid rgba(0,0,0,.3);
+}
+.err{
+    border-color: red;
+    background: red;
+    box-shadow: 0 0 4px 2px rgba(255,0,0,.8);
+}
+
+
+.giveUp{
+    width: 80px;
+    height: 30px;
+    margin: 40px auto 0 15px;
+}
+.alienMove{
+    width: 450px;
+    height: 50px;
+    background: rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #bebebe;
+    position: absolute;
+    display: none;
+}
+.load{
+    width: 900px;
+    height: 500px;
+    background: url("../images/bg.jpg") repeat;
+    position: absolute;
+    z-index: 2;
+
+
+}
+.curtain{
+    background: url("../images/curtains.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+}
+.curtainLeft{
+    width: 168px;
+    height: 498px;
+    background-position: -168px 0;
+}
+.curtainRight{
+    width: 168px;
+    height: 498px;
+    background-position: 0 0;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 168px);
+}
+.loadButton{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgba(0,0,0,.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+    margin-top: 20%;
+    margin-left: calc(50% - 75px);
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    text-align: center;
+}
+
+
+.loadButton h3 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#startGame{
+    padding: 4px 14px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #000;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#fff,#999);
+    background-repeat: repeat-x;
+    border: 1px solid #bbb;
+    border-bottom-color: rgb(187, 187, 187);
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.6);
+    position: absolute;
+    top: 104px;
+    left: 23px;
+}
+.endResult{
+    width: 500px;
+    height: 250px;
+    background: rgba(0,0,0,.8);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.7),0 1px 0 0 rgba(255,255,255,.2);
+    border-radius: 10px;
+    z-index: 6;
+    position: absolute;
+    left: calc(50% - 250px);
+    transition: opacity .3s, max-height .3s;
+display: none;
+}
+.endResult span{
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 100px);
+    text-shadow: 0 1px 0 #000;
+    color: white;
+    font-size: 20px;
+}
+.buttonEnd {
+    cursor: pointer;
+    color: #000;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#fff,#999);
+    background-repeat: repeat-x;
+    border: 1px solid #bbb;
+    border-bottom-color: rgb(187, 187, 187);
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.6);
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+}
+.buttonReturn{
+    cursor: pointer;
+    color: #000;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#fff,#999);
+    background-repeat: repeat-x;
+    border: 1px solid #bbb;
+    border-bottom-color: rgb(187, 187, 187);
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.6);
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+}
+#startGame:hover{
+    color: #000;
+    text-decoration: none;
+    background-color: #999;
+    background-position: 0 -15px;
+    transition: background-position .1s linear;
+}
+#circularG{
+    position:relative;
+    width:37px;
+    height:37px;
+    margin: auto;
+    top: 7px;
+}
+
+.circularG{
+    position:absolute;
+    background-color:rgba(219,207,175,0.61);
+    width:9px;
+    height:9px;
+    border-radius:6px;
+    animation-name:bounce_circularG;
+    animation-duration:1.1s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+}
+
+#circularG_1{
+    left:0;
+    top:15px;
+    animation-delay:0.41s;
+}
+
+#circularG_2{
+    left:4px;
+    top:4px;
+    animation-delay:0.55s;
+}
+
+#circularG_3{
+    top:0;
+    left:15px;
+    animation-delay:0.69s;
+}
+
+#circularG_4{
+    right:4px;
+    top:4px;
+    animation-delay:0.83s;
+}
+
+#circularG_5{
+    right:0;
+    top:15px;
+    animation-delay:0.97s;
+}
+
+#circularG_6{
+    right:4px;
+    bottom:4px;
+    animation-delay:1.1s;
+}
+
+#circularG_7{
+    left:15px;
+    bottom:0;
+    animation-delay:1.24s;
+}
+
+#circularG_8{
+    left:4px;
+    bottom:4px;
+    animation-delay:1.38s;
+}
+
+
+
+@keyframes bounce_circularG{
+    0%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(.3);
+    }
+}
+
+#grid{
+    margin: 40px auto;
+    width: 70%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px #F2906B;
+}
+.grrrid thead {
+    cursor: pointer;
+}
+.grrrid td {
+    text-align: center;
+    width: 50%  ;
+    border-top: 10px solid #F2906B;
+    padding: 8px;
+    background: white;
+}
+
+h2 {
+    text-align: center;
+}
