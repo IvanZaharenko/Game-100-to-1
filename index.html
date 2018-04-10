@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Сто к Одному (100 к 1)</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script defer src="script/gameThree.js"></script>
+    <script defer src="script/gameTwo.js"></script>
+    <script defer type="text/javascript" src="script/SPAstructure.js"></script>
+    <script defer type="text/javascript" src="script/game.js"></script>
+
+
+</head>
+<body >
+<div class="container">
+    <div id="main-menu">
+        <ul>
+            <li id = "Main" onclick="SwitchToMainPage()">Главная</li>
+            <li id = "Game" onclick = "SwitchToGamePage()">Игра</li>
+            <li id = "Settings" onclick = "SwitchToAboutPage()">Рекорды</li>
+        </ul>
+    </div>
+    <div id = "content">
+
+    </div>
+</div>
+
+<div  id="modalFormAsk">
+    <span id = "modalClose">❌</span>
+    <form class="form_horizontal_modal">
+
+        <div class="form_group">
+            <p>Представтесь</p>
+                <input name="textinput" id="textinput" class="form_contol" type="text" placeholder="Ваше имя">
+            <button type="button" id="OK" class="button ok">OK</button>
+
+        </div >
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
