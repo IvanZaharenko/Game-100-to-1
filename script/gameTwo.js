@@ -99,17 +99,21 @@ function endRoundtwo() {
     //если выйгрыш юзера
     if(leftErr  < 3 && rightErr >= 3|| LeftWin > 0 && rightWin < 1 ) {
         document.getElementById('roundScoreLeft').innerHTML = left + billingAccount;
+      //      document.getElementById('roundScore').innerHTML = 0;
+
         //numberTo("roundScoreLeft",1 ,billingAccount ,500);  //прибавляем к общему числу
     }
     //если выйгрыш компа
     else {
 
         document.getElementById('roundScoreRight').innerHTML = right + billingAccount ;
+        document.getElementById('roundScore').innerHTML = 0;
+
         //numberTo("roundScoreRight",1 ,billingAccount ,500);  //прибавляем к общему числу
     }
     allScore = 0;
     billingAccount = 0;
-    document.getElementById('roundScore').innerHTML = 0;
+   // document.getElementById('roundScore').innerHTML = 0;
 
     for (let i = 0; i < arrAnswers.length; i++){
 
@@ -165,6 +169,7 @@ function endRoundtwo() {
         returnGameTwo()
 
     },6000);
+    document.getElementById('roundScore').innerHTML  = '----';
 
     document.getElementById('wraperForm').classList.toggle('hide',true);
 }
@@ -186,6 +191,8 @@ function returnGameTwo() {
             setTimeout(computerThree,3000);
         } else {
             document.getElementById('wraperFormGoGo').classList.toggle('open',true);
+            document.getElementById('textAnswerGoGo').focus();
+
         }
     },length);
 

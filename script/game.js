@@ -89,12 +89,12 @@ function start () {
         "<div id='move' class='alienMove'>Чужой ход</div>" +
 
         "<form action='' id='clc'><div id='wraperForm'>" +
-        "<input name='textAnswer' id='textAnswer' placeholder='Ваш ответ' autocomplete='off'>" +
+        "<input name='textAnswer' id='textAnswer' placeholder='Ваш ответ' autocomplete='off' >" +
         "<input type='submit' id='time' value='Ответить'>" +
         "</div></form>" +
 
         "<form action='' id='goGo'><div id='wraperFormGoGo'>" +
-        "<input name='textAnswerGoGo' id='textAnswerGoGo' placeholder='Ваш ответ' autocomplete='off'>" +
+        "<input name='textAnswerGoGo' id='textAnswerGoGo' placeholder='Ваш ответ' autocomplete='off' > " +
         "<input type='submit' id='timeGoGo' value='Ответить'>" +
         "</div></form>" +
 
@@ -155,6 +155,7 @@ function startPlay() {
 
     document.getElementById('loadRaund').classList.toggle('open',false);
     document.getElementById('wraperForm').classList.toggle('hide', false);
+    document.getElementById('textAnswer').focus();
     document.getElementById("clc").onsubmit = function() {
         sbor();
         return false;
@@ -162,7 +163,7 @@ function startPlay() {
 }
 
 //при энтере или клику поиск ищем слово  певом раунде
-function sbor() {
+    function sbor() {
     valueUser = this.textAnswer.value;
     valueUser = valueUser.replace(/\s/g, '').toUpperCase();
 
@@ -214,10 +215,12 @@ function endRound() {
     //если выйгрыш юзера
     if(leftErr  < 3 && rightErr >= 3|| LeftWin > 0 && rightWin < 1 ) {
          document.getElementById('roundScoreLeft').innerHTML = billingAccount;
+
     }
     //если выйгрыш компа
     else {
          document.getElementById('roundScoreRight').innerHTML = billingAccount;
+
     }
     allScore = 0;
     billingAccount = 0;
@@ -268,6 +271,7 @@ setTimeout(function () {
     trueAnswer = 0;
     rightWin =0;
 
+    document.getElementById('roundScore').innerHTML = 0;
 
 document.getElementById('divAsk').firstChild.innerHTML = '';
     choice(questionBase);
@@ -290,9 +294,9 @@ function returnGame() {
 
         if (left > right) {
             document.getElementById('wraperForm').classList.toggle('hide',false);
+            document.getElementById('textAnswer').focus();
 
         } else {
-            //document.getElementById('move').classList.toggle('hide',false);
             document.getElementById('move').classList.toggle('open',true);
             setTimeout(computerTwo,3000);
         }
@@ -322,9 +326,10 @@ function computer() {
                     return endRound();
                  }
 
-        document.getElementById('textAnswer').focus();
+        //document.getElementById('textAnswer').focus();
         document.getElementById('wraperForm').classList.toggle('hide',false);
         document.getElementById('move').classList.toggle('open',false);
+        document.getElementById('textAnswer').focus();
 
         //при энтере или клику поиск ищем слово
     }  else {
@@ -339,7 +344,9 @@ function computer() {
         }
         document.getElementById('wraperForm').classList.toggle('hide',false);
         document.getElementById('move').classList.toggle('open',false);
-         }
+        document.getElementById('textAnswer').focus();
+
+    }
               }
 
 //проверка совпадений

@@ -2,7 +2,6 @@ let billing = 0;
 function     turThree() {
     document.getElementById("goGo").onsubmit = function() {
         sborThree();
-        document.getElementById('roundScore').innerHTML  = '----';
         document.getElementById('move').classList.toggle('hide', false);
 
         return false;
